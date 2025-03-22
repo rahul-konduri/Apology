@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/apology/static/css/main.72190f18.css",
-    "main.js": "/apology/static/js/main.a7f2845f.js",
+    "main.js": "/apology/static/js/main.e25c9c3b.js",
     "static/js/453.91fa7e33.chunk.js": "/apology/static/js/453.91fa7e33.chunk.js",
     "index.html": "/apology/index.html",
     "main.72190f18.css.map": "/apology/static/css/main.72190f18.css.map",
-    "main.a7f2845f.js.map": "/apology/static/js/main.a7f2845f.js.map",
+    "main.e25c9c3b.js.map": "/apology/static/js/main.e25c9c3b.js.map",
     "453.91fa7e33.chunk.js.map": "/apology/static/js/453.91fa7e33.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72190f18.css",
-    "static/js/main.a7f2845f.js"
+    "static/js/main.e25c9c3b.js"
   ]
 }
