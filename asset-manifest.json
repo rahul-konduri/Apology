@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Apology/static/css/main.72190f18.css",
-    "main.js": "/Apology/static/js/main.007c5857.js",
-    "static/js/453.91fa7e33.chunk.js": "/Apology/static/js/453.91fa7e33.chunk.js",
-    "index.html": "/Apology/index.html",
-    "main.72190f18.css.map": "/Apology/static/css/main.72190f18.css.map",
-    "main.007c5857.js.map": "/Apology/static/js/main.007c5857.js.map",
-    "453.91fa7e33.chunk.js.map": "/Apology/static/js/453.91fa7e33.chunk.js.map"
+    "main.css": "/apology/static/css/main.72190f18.css",
+    "main.js": "/apology/static/js/main.a7f2845f.js",
+    "static/js/453.91fa7e33.chunk.js": "/apology/static/js/453.91fa7e33.chunk.js",
+    "index.html": "/apology/index.html",
+    "main.72190f18.css.map": "/apology/static/css/main.72190f18.css.map",
+    "main.a7f2845f.js.map": "/apology/static/js/main.a7f2845f.js.map",
+    "453.91fa7e33.chunk.js.map": "/apology/static/js/453.91fa7e33.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72190f18.css",
-    "static/js/main.007c5857.js"
+    "static/js/main.a7f2845f.js"
   ]
 }
