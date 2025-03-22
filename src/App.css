@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #f8f9fa;
+  height: 100vh;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Container Styling */
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Backgrounds */
+.home-background {
+  background: linear-gradient(145deg, #e0f7fa, #bbdefb);
+}
+
+.acknowledgment-background {
+  background: linear-gradient(145deg, #c8e6c9, #bbdefb);
+}
+
+/* Typography */
+.title {
+  font-size: 4rem;
+  color: #3f51b5;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px rgba(63, 81, 181, 0.3);
+}
+
+.message {
+  font-size: 1.3rem;
+  color: #455a64;
+  max-width: 600px;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.button {
+  margin-top: 30px;
+  padding: 14px 28px;
+  font-size: 1.2rem;
   color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-color: #43a047;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Apology Page Style */
+.sorry-title {
+  color: #5c6bc0;
+  font-size: 4rem;
+  text-shadow: 1px 1px 5px rgba(92, 107, 192, 0.3);
+}
+
+/* Acknowledgment Page Style */
+.thankyou-title {
+  color: #43a047;
+  font-size: 4rem;
+  text-shadow: 1px 1px 5px rgba(67, 160, 71, 0.3);
+}
+
+/* Interactive Face Styles */
+.face-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  user-select: none;
+}
+
+.face-container:hover {
+  transform: scale(1.05);
+}
+
+.face-container:active {
+  transform: scale(0.95);
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(63, 81, 181, 0.3);
+  border: 4px solid white;
+}
+
+.face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tears {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(79, 195, 247, 1) 0%,
+    rgba(41, 182, 246, 1) 100%
+  );
+  border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
+  opacity: 0;
+  transition: height 0.5s, opacity 0.5s;
+}
+
+.left-tear {
+  left: 30%;
+}
+
+.right-tear {
+  right: 30%;
+}
+
+.tears.active {
+  height: 80px;
+  opacity: 1;
+}
+
+.tap-instruction {
+  font-size: 0.9rem;
+  color: #78909c;
+  margin-top: 8px;
+}
+
+.shake {
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
   }
-  to {
-    transform: rotate(360deg);
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .title {
+    font-size: 3rem;
+  }
+  .message {
+    font-size: 1rem;
+  }
+  .button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+  .face-container {
+    width: 150px;
+    height: 150px;
   }
 }
